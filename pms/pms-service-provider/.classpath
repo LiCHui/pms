@@ -27,5 +27,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/pms-common/target/classes" sourcepath="/pms-common/src/main/java"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

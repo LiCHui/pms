@@ -23,14 +23,10 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-		<groupId>org.mybatis</groupId>
-		<artifactId>mybatis</artifactId>
-	</dependency>
+    	<groupId>com.fq.ebusiness</groupId>
+		<artifactId>pms-common</artifactId>
+		<version>${project.version}</version>
+    </dependency>	
   </dependencies>
   <build>
 		<finalName>${project.artifactId}-${project.version}</finalName>

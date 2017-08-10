@@ -17,6 +17,20 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>com.fq.ebusiness</groupId>
+		<artifactId>pms-common</artifactId>
+		<version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-eureka-server</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <finalName>pms-service-provider</finalName>

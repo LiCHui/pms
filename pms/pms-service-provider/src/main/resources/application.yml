@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: pms-service-provider
+#register server
+server:
+   port: 8081
+eureka:
+   client:
+     serviceUrl:
+       defaultZone: http://localhost:8761/eureka/
+
+#druid
+ds:
+  jdbc:
+      url: jdbc:mysql://123.206.47.55:1234/wx_wishes?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull
+      username: wx_wishes
+      password: wx_wishes
+  druid:
+      initialSize: 1
+      maxActive: 20
+      minIdle: 1
+      maxWait: 60000
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 25200000
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      logAbandoned: true
+      filters: stat,wall,slf4j
+# MyBatis  
+mybatis:  
+    typeAliasesPackage: com.fq.ebusiness.pms.common.dao.modules.*.*.entity 
+    mapperLocations: classpath*:com/fq/ebusiness/pms/common/dao/modules/**/sqlMap/*.xml

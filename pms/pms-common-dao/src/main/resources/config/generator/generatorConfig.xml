@@ -27,7 +27,7 @@
 		<javaClientGenerator targetPackage="${targetMapperPackage}"
 			targetProject="${targetJavaProject}" type="XMLMAPPER" />
 
-		<table tableName="wx_autoreply_news_relation">
+		<table tableName="es_cloud_sys_log">
 <!-- 			<generatedKey column="id" sqlStatement="Mysql" identity="true" /> -->
 		</table>
 	</context>
